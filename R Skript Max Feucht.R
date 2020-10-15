@@ -465,7 +465,14 @@ mean(WD28$Sensitivity)
 #               # 
 #################  
   
-  GrafikL3Q3 <- ggplot(data=D28, aes(x=AUDIT, y=Sensitivity)) + geom_point(size=1,shape=1) + geom_smooth(method=lm, formula = y ~ I(0.17*x), aes(colour="#FF7777"), fill="#FF7777", se=TRUE, fullrange=TRUE, level=0.95) + stat_smooth(method =lm, formula = y ~ I(0.36*x) + I(-.013*I(x^2)), aes(colour="#00CCCC"), fill= "#00CCCC", size = 1,se=TRUE, fullrange=TRUE, level=0.95)  + scale_color_identity(name = "Modell",labels = c("Quadratisch", "Linear"), guide = "legend") + theme_classic() +  xlab("AUDIT-Score") + ylab("Sensitivitätsindex d'") + theme(axis.title.y = element_text(size = rel(1.4), angle = 90,family="Times New Roman"), axis.title.x = element_text(size = rel(1.4), angle = 0, family="Times New Roman")) + theme(plot.title = element_text(size = 14, face = "bold",family="Times New Roman"))
+  GrafikL3Q3 <- ggplot(data=D28, aes(x=AUDIT, y=Sensitivity)) + 
+                geom_point(size=1,shape=1) + 
+                geom_smooth(method=lm, formula = y ~ I(0.17*x), aes(colour="#FF7777"), fill="#FF7777", se=TRUE, fullrange=TRUE, level=0.95) + 
+                stat_smooth(method =lm, formula = y ~ I(0.36*x) + I(-.013*I(x^2)), aes(colour="#00CCCC"), fill= "#00CCCC", size = 1,se=TRUE, fullrange=TRUE, level=0.95)  + 
+                scale_color_identity(name = "Modell",labels = c("Quadratisch", "Linear"), guide = "legend") + theme_classic() +  xlab("AUDIT-Score") + ylab("Sensitivitätsindex d'") + 
+                theme(axis.title.y = element_text(size = rel(1.4), angle = 90,family="Times New Roman"), axis.title.x = element_text(size = rel(1.4), angle = 0, family="Times New Roman")) + 
+                theme(plot.title = element_text(size = 14, face = "bold",family="Times New Roman"))
+
   GrafikL3Q3
 
   
