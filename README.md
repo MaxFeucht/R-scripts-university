@@ -1,3 +1,2 @@
 # R scripts from university
-These are some R scripts from recent university projects including my Bachelor Thesis, a logistic regression project 
-and a project to practice multilevel data modelling and multilevel data analysis 
+These are some R scripts from recent university projects including my Bachelor Thesis, a logistic regression project, a project to practice multilevel data modelling and multilevel data analysis as well as the pretest for and the final analysis of a direct replication of Hugenberg & Bodenhausen (2003).
